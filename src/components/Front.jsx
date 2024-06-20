@@ -41,6 +41,8 @@ function Front() {
         window.open("https://github.com/Sigrsig", "_blank");
       } else if (commandInput.toLowerCase() === "linkedin") {
         window.open("https://www.linkedin.com/in/sigga-green/", "_blank");
+      } else {
+        setAllInvisible();
       }
       event.target.value = "";
     }
@@ -63,6 +65,7 @@ function Front() {
       {aboutVisible && <About />}
       {contactVisible && <Contact />}
       {catVisible && <Cat />}
+      <p>For a list of options type &quot;Home&quot; or &quot;Help&quot;</p>
 
       <div id="command-line">
         <div className="whitearrow" />

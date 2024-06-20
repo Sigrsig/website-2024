@@ -11,7 +11,6 @@ function About() {
         planning my next adventure. If you&apos;d like to work with me or just
         say hello, feel free to get in touch!
       </p>
-      <p>For a list of options type &quot;Home&quot; or &quot;Help&quot;</p>
     </div>
   );
 }
