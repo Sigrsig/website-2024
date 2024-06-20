@@ -1,7 +1,7 @@
 function FrontPage() {
   return (
     <div>
-      <p>
+      <p className="descriptions">
         This page works like a command prompt. Type in the page you&apos;re
         looking for and press &quot;Enter&quot; For a list of options type
         &quot;Home&quot; or &quot;Help&quot;
