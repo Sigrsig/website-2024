@@ -1,0 +1,79 @@
+/* @import url("https://pvinis.github.io/iosevka-webfont/3.4.1/iosevka.css"); */
+
+:root {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: #00ff00;
+  background-color: black;
+}
+
+input {
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  font-size: 1em;
+
+  caret-color: #00ff00;
+  color: #00ff00;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+input:focus {
+  border: none;
+}
+a {
+  color: #00ff00;
+}
+
+.descriptions > p {
+  color: #00ff00;
+}
+
+.descriptions {
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Comand line */
+#command-line {
+  display: flex;
+  align-items: center;
+}
+
+.location-bar {
+  display: flex;
+  align-items: center;
+}
+
+.location {
+  background-color: blue;
+  color: black;
+}
+
+.blackarrow {
+  background-color: blue;
+  width: 1em;
+  height: 1.5em;
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 100% 50%);
+}
+
+.bluearrow {
+  background-color: blue;
+  width: 1.5em;
+  height: 1.5em;
+  clip-path: polygon(0 0, 0% 100%, 50% 50%);
+}
+
+.whitearrow {
+  background-color: white;
+  width: 0.5em;
+  height: 1.5em;
+  clip-path: polygon(0 25%, 0% 75%, 75% 50%);
+}
+
+.w-text {
+  color: white;
+}
