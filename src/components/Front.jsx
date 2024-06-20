@@ -29,6 +29,15 @@ function Front() {
       } else if (commandInput.toLowerCase() === "cat") {
         setAllInvisible();
         setCatVisible(true);
+      } else if (commandInput.toLowerCase() === "cv") {
+        window.open(
+          "https://drive.google.com/file/d/1pRT-Tm7CyxJ_PDS5FM9Phy5F9dN-biQ4/view",
+          "_blank"
+        );
+      } else if (commandInput.toLowerCase() === "github") {
+        window.open("https://github.com/Sigrsig", "_blank");
+      } else if (commandInput.toLowerCase() === "linkedin") {
+        window.open("https://www.linkedin.com/in/sigga-green/", "_blank");
       }
       event.target.value = "";
     }
