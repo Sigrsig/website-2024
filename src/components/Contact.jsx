@@ -14,6 +14,7 @@ function Contact() {
       <a href="https://www.linkedin.com/in/sigga-green/" target="_blank">
         Linkedin
       </a>
+      <p>For a list of options type &quot;Home&quot; or &quot;Help&quot;</p>
     </div>
   );
 }

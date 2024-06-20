@@ -80,6 +80,7 @@ function Cat() {
   return (
     <div>
       <pre>{cat}</pre>
+      <p>For a list of options type &quot;Home&quot; or &quot;Help&quot;</p>
     </div>
   );
 }

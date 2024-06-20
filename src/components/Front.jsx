@@ -23,7 +23,10 @@ function Front() {
       } else if (commandInput.toLowerCase() === "contact") {
         setAllInvisible();
         setContactVisible(true);
-      } else if (commandInput.toLowerCase() === "home") {
+      } else if (
+        commandInput.toLowerCase() === "home" ||
+        commandInput.toLowerCase() === "help"
+      ) {
         setAllInvisible();
         setFrontVisible(true);
       } else if (commandInput.toLowerCase() === "cat") {
