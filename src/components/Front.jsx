@@ -10,6 +10,7 @@ function Front() {
   const [contactVisible, setContactVisible] = useState(false);
   const [catVisible, setCatVisible] = useState(false);
   const [frontVisible, setFrontVisible] = useState(true);
+  const [errorVisible, setErrorVisible] = useState(false);
 
   const handleCommandInput = (e) => {
     setCommandInput(e.target.value);
@@ -43,7 +44,10 @@ function Front() {
         window.open("https://www.linkedin.com/in/sigga-green/", "_blank");
       } else {
         setAllInvisible();
+        setErrorVisible(true);
       }
+
+      // Add "option not availabe" page
       event.target.value = "";
     }
   };
@@ -53,6 +57,7 @@ function Front() {
     setContactVisible(false);
     setFrontVisible(false);
     setCatVisible(false);
+    setErrorVisible(false);
     return;
   };
 
@@ -65,8 +70,12 @@ function Front() {
       {aboutVisible && <About />}
       {contactVisible && <Contact />}
       {catVisible && <Cat />}
-      <p>For a list of options type &quot;Home&quot; or &quot;Help&quot;</p>
-
+      {errorVisible && (
+        <p>
+          Unknown input. For a list of options type &quot;Home&quot; or
+          &quot;Help&quot;
+        </p>
+      )}
       <div id="command-line">
         <div className="whitearrow" />
         <p className="w-text">1410@WWIHD</p>
